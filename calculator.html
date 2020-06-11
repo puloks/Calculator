@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+			background-color: #521e1e;
+			text-align: center;
+}
+		.container{
+			margin:0 30%;
+		}
+		input[type="text"]{
+			padding: 12px 80px;
+		}
+		input[type="button"] {
+    		padding: 25px 25px;
+}
+		input {
+    font-size: 20px !important;
+}
+	</style>
+</head>
+<body>
+	<form name="calculator">
+				<input type="text" name="display"><br>
+				<input type="button" value="1" onclick="ClickOne()">
+				<input type="button" value="2" onclick="ClickTwo()">
+				<input type="button" value="3" onclick="ClickThree()">
+				<input type="button" value="4" onclick="ClickFour()">
+				<input type="button" value="/" onclick="ClickDiv()">
+				<input type="button" value="*" onclick="ClickMul()"><br>
+				<input type="button" value="5" onclick="ClickFive()">
+				<input type="button" value="6" onclick="ClickSix()">
+				<input type="button" value="7" onclick="ClickSeven()">
+				<input type="button" value="8" onclick="ClickEight()">
+				<input type="button" value="-" onclick="ClickSub()">
+				<input type="button" value="+" onclick="ClickAdd()"><br>
+				<input type="button" value="PULOK">
+				<input type="button" value="9" onclick="ClickNine()">
+				<input type="button" value="0" onclick="ClickZero()">
+				<input type="button" value="clr" onclick="ClickClr()">
+				<input type="button" value="=" onclick="ClickEqual()">
+			</form>
+      <script>
+        function ClickOne(){
+          document.calculator.display.value += 1;
+        }
+        function ClickTwo(){
+          document.calculator.display.value += 2;
+        }
+        function ClickThree(){
+          document.calculator.display.value += 3;
+        }
+        function ClickFour(){
+          document.calculator.display.value += 4;
+        }
+        function ClickFive(){
+          document.calculator.display.value += 5;
+        }
+        function ClickSix(){
+          document.calculator.display.value += 6;
+        }
+        function ClickSeven(){
+          document.calculator.display.value += 7;
+        }
+        function ClickEight(){
+          document.calculator.display.value += 8;
+        }
+        function ClickNine(){
+          document.calculator.display.value += 9;
+        }
+        function ClickZero(){
+          document.calculator.display.value += 0;
+        }
+        function ClickSub(){
+          document.calculator.display.value += "-";
+        }
+        function ClickAdd(){
+          document.calculator.display.value += "+";
+        }
+        function ClickDiv(){
+          document.calculator.display.value += "/";
+        }
+        function ClickMul(){
+          document.calculator.display.value += "*";
+        }
+        function ClickEqual(){ 
+           document.calculator.display.value = eval(document.calculator.display.value);
+        }
+        function ClickClr(){
+          document.calculator.display.value = "";
+        }
+      </script>
+</body>
+</html>
